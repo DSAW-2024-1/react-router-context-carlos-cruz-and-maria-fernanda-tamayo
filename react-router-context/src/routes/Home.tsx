@@ -1,8 +1,8 @@
 // Home.tsx
-import React from "react";
+
 import DefaultLayout from "../layout/DefaultLayout";
 import { useAuth } from "../auth/AuthProvider";
-import { Navigate } from "react-router-dom";
+
 
 export default function Home() {
     const auth = useAuth();
@@ -14,7 +14,7 @@ export default function Home() {
 
     return (
         <DefaultLayout>
-            <h1>Home</h1>
+            <h1>Bienvenido a Home</h1>
             <button onClick={handleLogout}>Cerrar sesión</button>
         </DefaultLayout>
     );
